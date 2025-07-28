@@ -79,13 +79,13 @@ export const Pricing = () => {
           </p>
 
           {/* Billing Toggle */}
-          <div className="inline-flex items-center bg-muted rounded-full p-1">
-            <button className="px-4 py-2 rounded-full bg-white shadow-sm text-sm font-medium">
+          <div className="inline-flex items-center bg-muted rounded-full p-1 shadow-soft">
+            <button className="px-4 py-2 rounded-full bg-white shadow-sm text-sm font-medium hover:shadow-medium transition-all duration-300">
               Monthly
             </button>
-            <button className="px-4 py-2 rounded-full text-sm font-medium text-muted-foreground">
+            <button className="px-4 py-2 rounded-full text-sm font-medium text-muted-foreground hover:bg-white hover:shadow-medium hover:text-foreground transition-all duration-300">
               Annual
-              <span className="ml-1 text-xs bg-green-100 text-green-600 px-2 py-1 rounded-full">
+              <span className="ml-1 text-xs bg-gradient-to-r from-green-400 to-green-500 text-white px-2 py-1 rounded-full animate-pulse">
                 Save 20%
               </span>
             </button>
@@ -97,15 +97,15 @@ export const Pricing = () => {
           {plans.map((plan, index) => (
             <Card 
               key={plan.name}
-              className={`pricing-card relative ${
+              className={`relative transition-all duration-500 hover:shadow-strong hover:-translate-y-4 group ${
                 plan.popular 
-                  ? 'pricing-card-featured transform lg:scale-105' 
-                  : ''
+                  ? 'bg-gradient-to-br from-primary/5 to-secondary/5 border-2 border-primary/20 transform lg:scale-105 shadow-glow' 
+                  : 'bg-white shadow-card hover:shadow-glow border border-border'
               }`}
             >
               {plan.popular && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <div className="bg-gradient-primary text-white px-4 py-2 rounded-full text-sm font-medium">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
+                  <div className="bg-gradient-primary text-white px-4 py-2 rounded-full text-sm font-medium shadow-medium animate-pulse">
                     Most Popular
                   </div>
                 </div>
@@ -113,10 +113,10 @@ export const Pricing = () => {
 
               <CardHeader className="text-center pb-4">
                 <div className={`w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br ${
-                  plan.name === 'Starter' ? 'from-blue-500 to-cyan-500' :
-                  plan.name === 'Professional' ? 'from-purple-500 to-pink-500' :
-                  'from-yellow-500 to-orange-500'
-                } flex items-center justify-center mb-4`}>
+                  plan.name === 'Starter' ? 'from-primary to-accent' :
+                  plan.name === 'Professional' ? 'from-primary to-secondary' :
+                  'from-secondary to-accent'
+                } flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-medium`}>
                   <plan.icon className="w-8 h-8 text-white" />
                 </div>
                 
@@ -138,20 +138,20 @@ export const Pricing = () => {
               <CardContent className="space-y-6">
                 <ul className="space-y-3">
                   {plan.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-start space-x-3">
-                      <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                      <span className="text-sm text-muted-foreground">{feature}</span>
+                    <li key={featureIndex} className="flex items-start space-x-3 group/feature hover:bg-muted/30 rounded-lg p-2 -mx-2 transition-all duration-200">
+                      <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0 group-hover/feature:scale-110 transition-transform duration-200" />
+                      <span className="text-sm text-muted-foreground group-hover/feature:text-foreground transition-colors duration-200">{feature}</span>
                     </li>
                   ))}
                 </ul>
 
                 <Button 
-                  className={`w-full ${
+                  className={`w-full transition-all duration-300 ${
                     plan.popular 
-                      ? 'bg-gradient-primary hover:shadow-glow' 
-                      : 'variant-outline'
+                      ? 'bg-gradient-primary hover:shadow-glow hover:scale-105' 
+                      : 'group-hover:border-primary group-hover:text-primary'
                   }`}
-                  variant={plan.popular ? "default" : "outline"}
+                  variant={plan.popular ? "gradient" : "outline"}
                   size="lg"
                 >
                   {plan.cta}

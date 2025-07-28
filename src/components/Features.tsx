@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Brain, BarChart3, Zap, Target, Users, Shield, Sparkles, TrendingUp } from "lucide-react";
+import { Brain, BarChart3, Zap, Target, Users, Shield, Sparkles, TrendingUp, ArrowRight, Play } from "lucide-react";
 
 const features = [
   {
@@ -79,19 +79,19 @@ export const Features = () => {
           {features.map((feature, index) => (
             <Card 
               key={index} 
-              className="feature-card group hover:shadow-glow border-0 bg-white/80 backdrop-blur-sm"
+              className="group bg-white/80 backdrop-blur-sm border-0 rounded-2xl p-6 shadow-card hover:shadow-strong transition-all duration-500 hover:-translate-y-4 hover:border-primary/20"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardHeader className="pb-4">
-                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${feature.gradient} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${feature.gradient} flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-medium`}>
                   <feature.icon className="w-6 h-6 text-white" />
                 </div>
-                <CardTitle className="text-lg font-semibold group-hover:text-primary transition-colors">
+                <CardTitle className="text-lg font-semibold group-hover:text-primary transition-colors duration-300">
                   {feature.title}
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="text-muted-foreground leading-relaxed">
+                <CardDescription className="text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors duration-300">
                   {feature.description}
                 </CardDescription>
               </CardContent>
@@ -105,10 +105,12 @@ export const Features = () => {
             Ready to experience the power of AI marketing?
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="inline-flex items-center justify-center px-8 py-3 bg-gradient-primary text-white font-semibold rounded-full hover:shadow-glow hover:scale-105 transition-all duration-300">
+            <button className="group inline-flex items-center justify-center px-8 py-3 bg-gradient-primary text-white font-semibold rounded-full hover:shadow-glow hover:scale-105 transition-all duration-300">
               Start Your Free Trial
+              <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-200" />
             </button>
-            <button className="inline-flex items-center justify-center px-8 py-3 border-2 border-primary text-primary font-semibold rounded-full hover:bg-primary hover:text-white transition-all duration-300">
+            <button className="group inline-flex items-center justify-center px-8 py-3 border-2 border-primary text-primary font-semibold rounded-full hover:bg-primary hover:text-white hover:scale-105 transition-all duration-300">
+              <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform duration-200" />
               Schedule Demo
             </button>
           </div>

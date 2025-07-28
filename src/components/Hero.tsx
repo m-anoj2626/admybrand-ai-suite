@@ -19,8 +19,8 @@ export const Hero = () => {
           {/* Left Content */}
           <div className="text-center lg:text-left">
             {/* Badge */}
-            <div className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6 fade-in-up">
-              <Star className="w-4 h-4 text-yellow-300 fill-current" />
+            <div className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6 fade-in-up hover:bg-white/30 transition-all duration-300 animate-pulse">
+              <Star className="w-4 h-4 text-yellow-300 fill-current animate-spin" />
               <span className="text-white text-sm font-medium">#1 AI Marketing Suite</span>
             </div>
 
@@ -39,12 +39,12 @@ export const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8 fade-in-up-delay-3">
-              <Button variant="hero" size="xl" className="group">
+              <Button variant="hero" size="xl" className="group hover:scale-105">
                 Start Free Trial
-                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-200" />
               </Button>
-              <Button variant="hero-outline" size="xl" className="group">
-                <Play className="w-5 h-5 mr-2" />
+              <Button variant="hero-outline" size="xl" className="group hover:scale-105">
+                <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform duration-200" />
                 Watch Demo
               </Button>
             </div>
