@@ -18,10 +18,10 @@ export const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="text-center lg:text-left">
-            {/* Badge */}
-            <div className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6 fade-in-up hover:bg-white/30 transition-all duration-300 animate-pulse">
-              <Star className="w-4 h-4 text-yellow-300 fill-current animate-spin" />
-              <span className="text-white text-sm font-medium">#1 AI Marketing Suite</span>
+            {/* Professional Badge */}
+            <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 mb-8 fade-in-up hover:bg-white/20 transition-all duration-500 border border-white/20">
+              <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+              <span className="text-white text-sm font-medium tracking-wide">AI-Powered Marketing Platform</span>
             </div>
 
             {/* Main Heading */}
@@ -81,20 +81,6 @@ export const Hero = () => {
                 className="relative z-10 w-full h-auto rounded-3xl shadow-strong"
               />
               
-              {/* Floating Elements */}
-              <div className="absolute -top-6 -right-6 bg-white rounded-2xl p-4 shadow-strong float-animation">
-                <div className="flex items-center space-x-2">
-                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                  <span className="text-sm font-medium">AI Active</span>
-                </div>
-              </div>
-              
-              <div className="absolute -bottom-6 -left-6 bg-gradient-primary rounded-2xl p-4 shadow-strong float-animation" style={{ animationDelay: '2s' }}>
-                <div className="text-white">
-                  <div className="text-2xl font-bold">+300%</div>
-                  <div className="text-sm opacity-90">ROI Increase</div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
