@@ -56,7 +56,7 @@ export const Testimonials = () => {
             <span className="text-primary font-medium text-xs sm:text-sm">Customer Stories</span>
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
-            Loved by <span className="text-transparent bg-clip-text bg-gradient-primary">Thousands</span>
+            Loved by <span className="text-transparent bg-clip-text bg-gradient-primary">Industry Leaders</span>
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto px-4">
             See how businesses worldwide are transforming their marketing with our AI suite

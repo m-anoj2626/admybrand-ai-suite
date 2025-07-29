@@ -149,9 +149,9 @@ export const Pricing = () => {
                   className={`w-full transition-all duration-300 ${
                     plan.popular 
                       ? 'bg-gradient-primary hover:shadow-glow hover:scale-105' 
-                      : 'group-hover:border-primary group-hover:text-primary'
+                      : 'bg-primary text-white hover:bg-primary/90 hover:shadow-glow hover:scale-105'
                   }`}
-                  variant={plan.popular ? "gradient" : "outline"}
+                  variant={plan.popular ? "gradient" : "default"}
                   size="lg"
                 >
                   {plan.cta}
