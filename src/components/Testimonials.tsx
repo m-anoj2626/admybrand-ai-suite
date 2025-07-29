@@ -42,39 +42,39 @@ export const Testimonials = () => {
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <section className="py-24 bg-gradient-to-br from-slate-50 via-white to-blue-50 relative overflow-hidden">
+    <section className="py-12 sm:py-16 lg:py-24 bg-gradient-to-br from-slate-50 via-white to-blue-50 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-primary rounded-full opacity-10 blur-3xl animate-pulse"></div>
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-secondary rounded-full opacity-10 blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-16 animate-fade-in">
-          <div className="inline-flex items-center space-x-2 bg-primary/10 rounded-full px-4 py-2 mb-4">
-            <Star className="w-4 h-4 text-primary fill-current" />
-            <span className="text-primary font-medium text-sm">Customer Stories</span>
+        <div className="text-center mb-8 sm:mb-12 lg:mb-16 animate-fade-in">
+          <div className="inline-flex items-center space-x-2 bg-primary/10 rounded-full px-3 sm:px-4 py-2 mb-3 sm:mb-4">
+            <Star className="w-3 h-3 sm:w-4 sm:h-4 text-primary fill-current" />
+            <span className="text-primary font-medium text-xs sm:text-sm">Customer Stories</span>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
             Loved by <span className="text-transparent bg-clip-text bg-gradient-primary">Thousands</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto px-4">
             See how businesses worldwide are transforming their marketing with our AI suite
           </p>
         </div>
 
         {/* Testimonial Card */}
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-3xl p-8 lg:p-12 shadow-elegant hover:shadow-strong transition-all duration-500 relative overflow-hidden group">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="bg-white rounded-2xl lg:rounded-3xl p-4 sm:p-6 lg:p-12 shadow-elegant hover:shadow-strong transition-all duration-500 relative overflow-hidden group">
             {/* Background Gradient */}
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             
             <div className="relative z-10">
-              <div className="flex flex-col lg:flex-row items-center lg:items-start space-y-6 lg:space-y-0 lg:space-x-8">
+              <div className="flex flex-col items-center text-center space-y-4 sm:space-y-6">
                 {/* Customer Photo */}
                 <div className="flex-shrink-0">
                   <div className="relative">
-                    <div className="w-24 h-24 lg:w-32 lg:h-32 rounded-full overflow-hidden border-4 border-white shadow-strong group-hover:scale-105 transition-transform duration-500">
+                    <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-full overflow-hidden border-3 border-white shadow-md group-hover:scale-105 transition-transform duration-500">
                       <img 
                         src={currentTestimonial.image} 
                         alt={currentTestimonial.name}
@@ -82,33 +82,30 @@ export const Testimonials = () => {
                       />
                     </div>
                     {/* Online Indicator */}
-                    <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-green-500 rounded-full border-2 border-white animate-pulse"></div>
+                    <div className="absolute -bottom-0.5 -right-0.5 w-4 h-4 sm:w-5 sm:h-5 bg-green-500 rounded-full border-2 border-white animate-pulse"></div>
                   </div>
                 </div>
 
-                {/* Testimonial Content */}
-                <div className="flex-1 text-center lg:text-left">
-                  {/* Stars */}
-                  <div className="flex justify-center lg:justify-start space-x-1 mb-4">
-                    {[...Array(currentTestimonial.rating)].map((_, i) => (
-                      <Star 
-                        key={i} 
-                        className="w-5 h-5 text-yellow-400 fill-current animate-pulse" 
-                        style={{ animationDelay: `${i * 0.1}s` }}
-                      />
-                    ))}
-                  </div>
+                {/* Stars */}
+                <div className="flex justify-center space-x-1">
+                  {[...Array(currentTestimonial.rating)].map((_, i) => (
+                    <Star 
+                      key={i} 
+                      className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400 fill-current animate-pulse" 
+                      style={{ animationDelay: `${i * 0.1}s` }}
+                    />
+                  ))}
+                </div>
 
-                  {/* Testimonial Text */}
-                  <blockquote className="text-lg lg:text-xl text-gray-700 leading-relaxed mb-6 italic">
-                    "{currentTestimonial.text}"
-                  </blockquote>
+                {/* Testimonial Text */}
+                <blockquote className="text-sm sm:text-base lg:text-lg text-gray-700 leading-relaxed italic max-w-2xl">
+                  "{currentTestimonial.text}"
+                </blockquote>
 
-                  {/* Customer Info */}
-                  <div>
-                    <div className="font-semibold text-gray-900 text-lg">{currentTestimonial.name}</div>
-                    <div className="text-gray-600">{currentTestimonial.title}</div>
-                  </div>
+                {/* Customer Info */}
+                <div className="text-center">
+                  <div className="font-semibold text-gray-900 text-base sm:text-lg">{currentTestimonial.name}</div>
+                  <div className="text-gray-600 text-sm sm:text-base">{currentTestimonial.title}</div>
                 </div>
               </div>
             </div>
