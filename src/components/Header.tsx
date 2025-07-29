@@ -11,11 +11,11 @@ export const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
+            {/* <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
               <Zap className="w-5 h-5 text-white" />
-            </div>
+            </div> */}
             <span className="text-xl font-bold gradient-text">ADmyBRAND</span>
-            <span className="text-sm text-muted-foreground font-medium">AI Suite</span>
+            <span className="text-sm gradient-text font-medium">AI Suite</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -36,7 +36,7 @@ export const Header = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" size="sm">
+            <Button variant="gradient" size="sm">
               Sign In
             </Button>
             <Button variant="gradient" size="sm">

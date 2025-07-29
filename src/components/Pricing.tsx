@@ -60,9 +60,9 @@ const plans = [
 export const Pricing = () => {
   return (
     <section id="pricing" className="py-20 lg:py-32">
-      <div className="container mx-auto px-4 lg:px-8">
+      <div className="container mx-auto px-4 lg:px-8 bg-gradient-to-br from-white via-blue-200 to-white pb-10">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 ">
           <div className="inline-flex items-center space-x-2 bg-primary/10 rounded-full px-4 py-2 mb-6">
             <Star className="w-4 h-4 text-primary" />
             <span className="text-primary text-sm font-medium">Simple Pricing</span>
@@ -73,7 +73,7 @@ export const Pricing = () => {
             <span className="gradient-text"> Success Plan</span>
           </h2>
           
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-8">
             Start free and scale as you grow. All plans include our core AI features 
             with no hidden costs or setup fees.
           </p>
@@ -163,15 +163,15 @@ export const Pricing = () => {
 
         {/* Trust Indicators */}
         <div className="mt-16 text-center">
-          <p className="text-muted-foreground mb-8">
+          <p className="text-gray-700 mb-8">
             Trusted by over 10,000 brands worldwide
           </p>
           
           <div className="flex items-center justify-center space-x-8 opacity-60">
-            <div className="text-2xl font-bold">TechCorp</div>
-            <div className="text-2xl font-bold">GlobalBrand</div>
-            <div className="text-2xl font-bold">InnovateInc</div>
-            <div className="text-2xl font-bold">FutureFlow</div>
+            <div className="text-2xl font-bold text-black">TechCorp</div>
+            <div className="text-2xl font-bold text-black">GlobalBrand</div>
+            <div className="text-2xl font-bold text-black">InnovateInc</div>
+            <div className="text-2xl font-bold text-black">FutureFlow</div>
           </div>
         </div>
       </div>

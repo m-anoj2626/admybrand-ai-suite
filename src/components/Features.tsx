@@ -54,7 +54,7 @@ const features = [
 
 export const Features = () => {
   return (
-    <section id="features" className="py-20 lg:py-32 bg-muted/30">
+    <section id="features" className="py-20 lg:py-32 bg-purple-200">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -68,7 +68,7 @@ export const Features = () => {
             <span className="block">Dominate Your Market</span>
           </h2>
           
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
             Our comprehensive AI suite provides all the tools and insights you need to 
             create, manage, and optimize successful marketing campaigns.
           </p>
@@ -101,7 +101,7 @@ export const Features = () => {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <p className="text-muted-foreground mb-6">
+          <p className="text-gray-700 mb-6">
             Ready to experience the power of AI marketing?
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

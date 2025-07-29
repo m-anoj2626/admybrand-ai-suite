@@ -34,7 +34,7 @@ const faqs = [
 
 export const FAQ = () => {
   return (
-    <section id="faq" className="py-12 sm:py-16 lg:py-24 bg-gradient-to-br from-white via-slate-50 to-blue-50 relative overflow-hidden">
+    <section id="faq" className="py-12 sm:py-16 lg:py-24 bg-gradient-to-br from-green-200 via-slate-50 to-red-400 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       <div className="absolute top-20 right-10 w-64 h-64 bg-gradient-primary rounded-full opacity-10 blur-3xl animate-pulse"></div>
@@ -48,7 +48,7 @@ export const FAQ = () => {
             <span className="text-primary font-medium text-xs sm:text-sm">Got Questions?</span>
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
-            Frequently Asked <span className="text-transparent bg-clip-text bg-gradient-primary">Questions</span>
+            Frequently Asked <span className=" bg-clip-text ">Questions</span>
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto px-4">
             Everything you need to know about ADmyBRAND AI Suite
@@ -98,10 +98,10 @@ export const FAQ = () => {
                 <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 lg:mb-4">Still have questions?</h3>
                 <p className="text-white/90 mb-4 sm:mb-5 lg:mb-6 text-sm sm:text-base">Our team is here to help you succeed with AI-powered marketing</p>
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-                  <button className="bg-white text-primary px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3 rounded-lg lg:rounded-xl font-semibold hover:bg-gray-100 transition-colors duration-300 hover:scale-105 transform text-sm sm:text-base">
+                  <button className="bg-white text-primary px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3 rounded-lg lg:rounded-xl font-semibold hover:bg-gray-100 transition tranform-duration-300 hover:scale-105 transform text-sm sm:text-base">
                     Contact Support
                   </button>
-                  <button className="border-2 border-white text-white px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3 rounded-lg lg:rounded-xl font-semibold hover:bg-white hover:text-primary transition-all duration-300 hover:scale-105 transform text-sm sm:text-base">
+                  <button className="bg-white text-primary px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3 rounded-lg lg:rounded-xl font-semibold hover:bg-gray-100 transition transform-duration-300 hover:scale-105 transform text-sm sm:text-base">
                     Schedule Demo
                   </button>
                 </div>

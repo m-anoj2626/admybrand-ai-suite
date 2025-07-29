@@ -6,7 +6,7 @@ export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-hero"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-green-300"></div>
       
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
