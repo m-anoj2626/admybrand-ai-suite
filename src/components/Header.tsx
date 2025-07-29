@@ -26,11 +26,11 @@ export const Header = () => {
             <a href="#pricing" className="text-foreground hover:text-primary transition-colors">
               Pricing
             </a>
-            <a href="#about" className="text-foreground hover:text-primary transition-colors">
-              About
+            <a href="#testimonials" className="text-foreground hover:text-primary transition-colors">
+              Testimonials
             </a>
-            <a href="#contact" className="text-foreground hover:text-primary transition-colors">
-              Contact
+            <a href="#faq" className="text-foreground hover:text-primary transition-colors">
+              FAQ
             </a>
           </nav>
 
@@ -63,11 +63,11 @@ export const Header = () => {
               <a href="#pricing" className="text-foreground hover:text-primary transition-colors">
                 Pricing
               </a>
-              <a href="#about" className="text-foreground hover:text-primary transition-colors">
-                About
+              <a href="#testimonials" className="text-foreground hover:text-primary transition-colors">
+                Testimonials
               </a>
-              <a href="#contact" className="text-foreground hover:text-primary transition-colors">
-                Contact
+              <a href="#faq" className="text-foreground hover:text-primary transition-colors">
+                FAQ
               </a>
               <div className="flex flex-col space-y-2 pt-4">
                 <Button variant="ghost" size="sm">

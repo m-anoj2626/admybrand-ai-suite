@@ -34,7 +34,7 @@ const faqs = [
 
 export const FAQ = () => {
   return (
-    <section className="py-12 sm:py-16 lg:py-24 bg-gradient-to-br from-white via-slate-50 to-blue-50 relative overflow-hidden">
+    <section id="faq" className="py-12 sm:py-16 lg:py-24 bg-gradient-to-br from-white via-slate-50 to-blue-50 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       <div className="absolute top-20 right-10 w-64 h-64 bg-gradient-primary rounded-full opacity-10 blur-3xl animate-pulse"></div>
@@ -43,9 +43,9 @@ export const FAQ = () => {
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-8 sm:mb-12 lg:mb-16 animate-fade-in">
-          <div className="inline-flex items-center space-x-2 bg-secondary/10 rounded-full px-3 sm:px-4 py-2 mb-3 sm:mb-4">
-            <HelpCircle className="w-3 h-3 sm:w-4 sm:h-4 text-secondary" />
-            <span className="text-secondary font-medium text-xs sm:text-sm">Got Questions?</span>
+          <div className="inline-flex items-center space-x-2 bg-primary/10 rounded-full px-3 sm:px-4 py-2 mb-3 sm:mb-4">
+            <HelpCircle className="w-3 h-3 sm:w-4 sm:h-4 text-primary" />
+            <span className="text-primary font-medium text-xs sm:text-sm">Got Questions?</span>
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
             Frequently Asked <span className="text-transparent bg-clip-text bg-gradient-primary">Questions</span>
